@@ -1,7 +1,7 @@
 /* 
     This is a CSS comment. Please add your name to this file below:
     
-    NAME: 
+    NAME:Christopher Burnett 
 */
 /* -------------------------------------------------- */
 /* 
@@ -263,8 +263,8 @@ p code, li code{
     padding: 0.5rem 0;
 }
 
-#section4 li::before{
-    content: 
+#section4 li::before {
+    content: "."
 }
 
 #section5 p:last-of-type{
@@ -334,6 +334,16 @@ footer{
         - add the large box shadow
 */
 /* ADD SELECTOR AND STYLES HERE */
+#section2 a {
+    display: block;
+    text-decoration: none ;
+    text-align:center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    box-shadow: 0 8px 16px;
+
+}
 
 /* For the first link in this section: */
 #section2 a:first-of-type{
@@ -361,6 +371,7 @@ footer{
 }
 
 /* For the last paragraph in the section */
+
 /* 
     TO DO: add styles to the last paragraph in this section that will:
         - make the background the teal-rgba color
@@ -376,7 +387,13 @@ footer{
             - bottom: 16px
             - left: 60px
 */
+
+
 #section2 div > p:last-of-type{
+    background-color: var(--teal-rgba);
+    border: 4px dashed var(--dk-gray);
+    margin: 16px 60px 32px 8px;
+    padding: 32px 8px 16px 60px;
     
 }
 
@@ -394,7 +411,10 @@ footer{
         - add the small box shadow, using the variable in the root
 */
 #section2 a:first-of-type:hover{
-
+    background-color: var(--dk-blue);
+    color: var(--white);
+    border-color:var(--lt-blue-rgba);
+   box-shadow:var(--sm-shadow);
 }
 
 #section2 a:last-of-type:hover{
@@ -418,6 +438,11 @@ footer{
         - add the small filter drop shadow from the CSS variables in the root
 */
 #section3 img{
+    display: block;
+    width: 200px;  
+    height: auto;
+    margin: 0 auto;
+    filter: var(--sm-drop-shadow);
     
 }
 
@@ -460,6 +485,16 @@ footer{
         - move this to the right from its original location by 25px
 */
 #section3 div::after{
+    content: "";
+    display: block; 
+    width: 50px ;  
+    height: 50px;   
+    background-color: var(--lt-blue);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    top: -50%;
+    left: 25px;
 }
 
 
@@ -482,6 +517,10 @@ footer{
 */
 #section4 p:last-of-type{
 
+    margin-top: 1rem;
+    margin-right: 0%;
+    margin-bottom: 1rem;
+    margin-left: 0%;
 }
 
 /* ------------- SECTION 5 STYLES ---------------- */
@@ -507,7 +546,10 @@ footer{
 
 /* For the second div, let's align the image to the right and add the dark gray as the background color */
 #bg-img-2{
+    background-color: var(--dk-gray);
     background: var(--dk-gray) right no-repeat url("images/puppy-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 /* For the third div, let's include the a background color, allow the image to tile, but center the tiling in the container */
@@ -518,7 +560,11 @@ footer{
         - add the puppy-photo as a repeating background to the container
 */
 #bg-img-3{
-    
+    background-color: var(--lt-blue);
+     background-image: url("images/puppy-photo.jpg");
+    background-position: center;
+    background-repeat: repeat;
+  
 }
 
 /* For the fourth div, let's style this like the second div, but let's change the height of the div to 100px, so it fits the height of the image. It will make it look like the image and div are the same height */
@@ -545,6 +591,12 @@ footer{
         - add the wood background texture from the images folder
 */
 #pattern1{
+    background-color: var(--light-gray);
+    background-image: url("images/wood.png");
+    background-size: 110%;
+    background-repeat: repeat;
+    background-position:center;
+
     
 }
 
@@ -602,6 +654,7 @@ footer{
         - float the image to the right
 */
 #dog-house{
+    float:right;
     
 }
 
@@ -611,6 +664,7 @@ footer{
         - clear any floats
 */
 #section9{
+    clear:both;
     
 }
 
